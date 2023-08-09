@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-def fizzbuzz():
-    for num in range(1, 101):
-        if num % 3 == 0 and num % 5 == 0:
-            print("FizzBuzz", end=" ")
-        elif num % 3 == 0:
-            print("Fizz", end=" ")
-        elif num % 5 == 0:
-            print("Buzz", end=" ")
-        else:
-            print("{:d}".format(num), end=" ")
+# 101-remove_char_at.py
+
+
+def remove_char_at(str, n):
+    """Create a copy of the string without the character at position n."""
+    if n < 0:
+        return (str)
+    return (str[:n] + str[n+1:])
+
